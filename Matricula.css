@@ -1,0 +1,66 @@
+/* Matricula.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Color de fondo de la página principal */
+}
+
+/* Título de la página */
+h1 {
+    text-align: center;
+    color: #333; /* Color del título de la página principal */
+    margin-bottom: 20px;
+}
+
+/* Formulario de matrícula */
+form {
+    width: 80%; /* Ancho del formulario */
+    margin: 40px auto; /* Centrar el formulario */
+    padding: 20px; /* Espacio entre el formulario y el borde */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 10px; /* Curvar los bordes del formulario */
+    background-color: #fff; /* Color de fondo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+}
+
+/* Campos de texto y botones */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%; /* Ancho de los campos de texto */
+    padding: 10px; /* Espacio entre el texto y el borde */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde de los campos de texto */
+    border-radius: 5px; /* Curvar los bordes de los campos de texto */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Color del botón de guardar */
+    color: #fff; /* Color del texto del botón de guardar */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41; /* Color del botón de guardar al pasar el mouse */
+}
+
+/* Estilos para los campos de opción múltiple */
+#matricula-form {
+    margin-top: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,117 @@
+/* Add styles for the main content section */
+body {
+    background-color: #b67ced; /* adjust the background color to your liking */
+    background-image: url('fondo.jpg'); /* replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(214, 223, 255, 0.5); /* adjust the color and transparency to your liking */
+    padding: 20px; /* add some padding to create space around the content */
+    border-radius: 10px; /* add a rounded corner to the overlay */
+    width: fit-content; /* make the container only as wide as the content */
+    margin: 0 auto;
+    text-align: center;/* center the container horizontally */
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Add styles for the buttons section */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #9fd5d1; /* Green color */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.button:hover {
+    background-color: #1e1549; /* Darker green color on hover */
+}
+
+/* Add styles for the about us section */
+.about-us {
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    margin-top: 20px;
+}
+
+/* Add styles for the photo collage section */
+.photo-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-collage img {
+    width: 20%; /* Adjust the width to your liking */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #637db3;
+    color: #fff;
+    padding: 1em;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 10px; /* adjust the left position to your liking */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* adjust the width to your liking */
+    height: 50px; /* adjust the height to your liking */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
