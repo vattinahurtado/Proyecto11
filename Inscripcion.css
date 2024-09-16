@@ -1,6 +1,53 @@
 /* Inscripción.css */
 
 /* Estilos generales */
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #637db3;
+    color: #610000;
+    padding: 1em;
+    position: relative;
+    max-width: 100%; /* add this to limit the header width */
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* adjust the width to your liking */
+    height: 50px; /* adjust the height to your liking */
+    z-index: 1;
+    max-width: 50px; /* add this to limit the logo width */
+    max-height: 50px; /* add this to limit the logo height */
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #3f219a3d; /* Color de fondo de la página principal */
@@ -58,43 +105,3 @@ input[type="submit"]:hover {
     background-color: #3e8e41; /* Color del botón de guardar al pasar el mouse */
 }
 
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #637db3;
-    color: #fff;
-    padding: 1em;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 10px; /* adjust the left position to your liking */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px; /* adjust the width to your liking */
-    height: 50px; /* adjust the height to your liking */
-}
-
-nav {
-    margin-left: auto;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
