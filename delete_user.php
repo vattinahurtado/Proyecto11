@@ -1,7 +1,7 @@
 <?php
 
-include("con_db.php");
-$con = conex();
+include("connection.php");
+$con = connection();
 
 $id=$_GET["id"];
 

@@ -1,6 +1,6 @@
 <?php
 
-function conex(){
+function connection(){
     $host = "localhost";
     $user = "root";
     $pass = "";

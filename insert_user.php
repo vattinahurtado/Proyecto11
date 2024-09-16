@@ -1,6 +1,6 @@
 <?php
-include("con_db.php");
-$con = conex();
+include("connection.php");
+$con = connection();
 
 $id = null;
 $nombre = $_POST['Nombres'];
