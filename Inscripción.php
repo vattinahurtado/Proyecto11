@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="Inscripcion.css">
 </head>
 <body>
+<header>
+    <img src="logo-icit-png.png" alt="Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="Inscripción.php">Inscripciones</a></li>
+            <li><a href="Matricula.php">Matriculas</a></li>
+        </ul>
+    </nav>
+</header>
 <h1>Formulario de Inscripción</h1>
 <form method="post" enctype="multipart/form-data">
     <label for="nombre">Nombre:</label>

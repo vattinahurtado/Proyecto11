@@ -12,7 +12,8 @@ $apellidoAcu = $_POST['Apellidos del acudiente'];
 $documentoAcu = $_POST['Numero de documento del acudiente'];
 $telContacto = $_POST['Teléfono de contacto'];
 
-$sql="UPDATE users SET Nombres='$name', Apellidos='$lastname', Numero de documento='$documentoEst', Apellidos del acudiente='$apellidoAcu', Numero de documento del acudiente '$documentoAcu', Teléfono de contacto='$telContacto' WHERE ID='$id'";
+$sql="UPDATE datos SET 'Nombres' ='$name', 'Apellidos' ='$lastname', 'Numero de documento' ='$documentoEst', 'Nombres del acudiente' = '$nombreAcu',
+'Apellidos del acudiente' ='$apellidoAcu', 'Numero de documento del acudiente' = '$documentoAcu', 'Teléfono de contacto' ='$telContacto' WHERE 'ID' ='$id'";
 $query = mysqli_query($con, $sql);
 
 if($query){

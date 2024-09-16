@@ -1,5 +1,3 @@
-<!-- Matricula.html -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +5,16 @@
     <link rel="stylesheet" href="Matricula.css">
 </head>
 <body>
+<header>
+    <img src="logo-icit-png.png" alt="Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="Inscripción.php">Inscripciones</a></li>
+            <li><a href="Matricula.php">Matriculas</a></li>
+        </ul>
+    </nav>
+</header>
 <h1>Formulario de Matrícula</h1>
 <form>
     <label for="documento_identidad">Documento de Identidad:</label>

@@ -1,6 +1,6 @@
 <?php
-include("con_db.php");
-$con = conex();
+include("connection.php");
+$con = connection();
 
 $sql = "SELECT * FROM datos";
 $query = mysqli_query($con, $sql);

@@ -17,6 +17,16 @@ $query = mysqli_query($con, $sql);
     <title>Acceso Colegio</title>
 </head>
 <body>
+    <header>
+        <img src="logo-icit-png.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="Inscripción.php">Inscripciones</a></li>
+                <li><a href="Matricula.php">Matriculas</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Acceso Colegio</h1>
     <div class="users-form">
         <h1>Crear usuario</h1>

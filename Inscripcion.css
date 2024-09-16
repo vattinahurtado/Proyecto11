@@ -23,7 +23,7 @@ form {
     background-color: #ffffff; /* Color de fondo del formulario */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
     margin-bottom: 50px;
-    tetxt-align: center;
+    text-align: center;
     color: #333; /* Color del texto del formulario */
 }
 
@@ -56,4 +56,45 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #3e8e41; /* Color del botón de guardar al pasar el mouse */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #637db3;
+    color: #fff;
+    padding: 1em;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 10px; /* adjust the left position to your liking */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* adjust the width to your liking */
+    height: 50px; /* adjust the height to your liking */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
