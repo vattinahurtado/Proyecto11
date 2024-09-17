@@ -25,11 +25,11 @@
                 <input type="hidden" name="ID" value="<?= $row['ID']?>">
                 <input type="text" name="Nombres" placeholder="Nombre" value="<?= $row['Nombres']?>">
                 <input type="text" name="Apellidos" placeholder="Apellidos" value="<?= $row['Apellidos']?>">
-                <input type="text" name="Numero de documento" placeholder="Numero de documento" value="<?= $row['Numero de documento']?>">
-                <input type="text" name="Nombres del acudiente" placeholder="Nombres del acudiente" value="<?= $row['Nombres del acudiente']?>">
-                <input type="text" name="Apellidos del acudiente" placeholder="Apellidos del acudiente" value="<?= $row['Apellidos del acudiente']?>">
-                <input type="text" name="Numero de documento del acudiente" placeholder="Numero de documento del acudiente" value="<?= $row['Numero de documento del acudiente']?>">
-                <input type="text" name="Teléfono de contacto" placeholder="Teléfono de contacto" value="<?= $row['Teléfono de contacto']?>">
+                <input type="text" name="Numerodedocumento" placeholder="Numero de documento" value="<?= $row['Numerodocumento']?>">
+                <input type="text" name="Nombresdelacudiente" placeholder="Nombres del acudiente" value="<?= $row['NombreAcudiente']?>">
+                <input type="text" name="Apellidosdelacudiente" placeholder="Apellidos del acudiente" value="<?= $row['ApellidoAcudiente']?>">
+                <input type="text" name="Numerodedocumentodelacudiente" placeholder="Numero de documento del acudiente" value="<?= $row['DocumentoAcudiente']?>">
+                <input type="text" name="Teléfonodecontacto" placeholder="Teléfono de contacto" value="<?= $row['Telefono']?>">
 
                 <input type="submit" value="Actualizar">
             </form>

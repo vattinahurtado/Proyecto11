@@ -2,19 +2,19 @@
 include("connection.php");
 $con = connection();
 
-$id = null;
 $nombre = $_POST['Nombres'];
 $apellido = $_POST['Apellidos'];
-$documentoEst = $_POST['Numero de documento'];
-$nombreAcu = $_POST['Nombres del acudiente'];
-$apellidoAcu = $_POST['Apellidos del acudiente'];
-$documentoAcu = $_POST['Numero de documento del acudiente'];
-$telContacto = $_POST['Teléfono de contacto'];
+$documentoEst = $_POST['Numerodedocumento'];
+$nombreAcu = $_POST['Nombresdelacudiente'];
+$apellidoAcu = $_POST['Apellidosdelacudiente'];
+$documentoAcu = $_POST['Numerodedocumentodelacudiente'];
+$telContacto = $_POST['Teléfonodecontacto'];
 
-$sql = "INSERT INTO users VALUES('$id','$nombre','$apellido','$documentoEst','$nombreAcu','$apellidoAcu','$documentoAcu','$telContacto)";
-$query = mysqli_query($con, $sql);
+$consulta = "INSERT INTO datos(Nombres, Apellidos, Numerodocumento, NombreAcudiente, ApellidoAcudiente, DocumentoAcudiente, Telefono)
+VALUES ('$nombre', '$apellido', '$documentoEst', '$nombreAcu', '$apellidoAcu', '$documentoAcu', '$telContacto')";
+$result = mysqli_query($con, $consulta);
 
-if($query){
+if($result){
     Header("Location: AccesoColegio.php");
 }else{
 

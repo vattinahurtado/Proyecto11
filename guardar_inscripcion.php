@@ -21,7 +21,7 @@ if(isset($_POST['guardar'])) {
         $apellido_acudiente = trim($_POST['apellido_acudiente']);
         $documento_acudiente = trim($_POST['documento_acudiente']);
         $telefono_contacto = trim($_POST['telefono_contacto']);
-        $consulta = "INSERT INTO datos(Nombres, Apellidos, Numero_de_documento, Nombre_del_acudiente, Apellidos_del_acudiente, Numero_de_documento_del_acudiente, Telefono_de_contacto)
+        $consulta = "INSERT INTO datos(Nombres, Apellidos, 	Numerodocumento, NombreAcudiente, ApellidoAcudiente, DocumentoAcudiente	, Telefono)
         VALUES ('$nombre', '$apellido', '$documento_identidad', '$nombre_acudiente', '$apellido_acudiente', '$documento_acudiente', '$telefono_contacto')";
         $result = mysqli_query($con, $consulta);
         if ($result){

@@ -3,23 +3,24 @@
 include("connection.php");
 $con = connection();
 
-$id=$_POST["ID"];
+$id = $_POST["ID"];
 $nombre = $_POST['Nombres'];
 $apellido = $_POST['Apellidos'];
-$documentoEst = $_POST['Numero de documento'];
-$nombreAcu = $_POST['Nombres del acudiente'];
-$apellidoAcu = $_POST['Apellidos del acudiente'];
-$documentoAcu = $_POST['Numero de documento del acudiente'];
-$telContacto = $_POST['Teléfono de contacto'];
+$documentoEst = $_POST['Numerodedocumento'];
+$nombreAcu = $_POST['Nombresdelacudiente'];
+$apellidoAcu = $_POST['Apellidosdelacudiente'];
+$documentoAcu = $_POST['Numerodedocumentodelacudiente'];
+$telContacto = $_POST['Teléfonodecontacto'];
 
-$sql="UPDATE datos SET 'Nombres' ='$name', 'Apellidos' ='$lastname', 'Numero de documento' ='$documentoEst', 'Nombres del acudiente' = '$nombreAcu',
-'Apellidos del acudiente' ='$apellidoAcu', 'Numero de documento del acudiente' = '$documentoAcu', 'Teléfono de contacto' ='$telContacto' WHERE 'ID' ='$id'";
+// Consulta SQL corregida
+$sql = "UPDATE datos SET Nombres='$nombre', Apellidos='$apellido', Numerodocumento='$documentoEst', NombreAcudiente='$nombreAcu', ApellidoAcudiente='$apellidoAcu', DocumentoAcudiente='$documentoAcu', Telefono='$telContacto' WHERE ID='$id'";
+
 $query = mysqli_query($con, $sql);
 
 if($query){
     Header("Location: AccesoColegio.php");
-}else{
-
+} else {
+    echo "Error al actualizar los datos.";
 }
 
 ?>

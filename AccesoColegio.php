@@ -29,15 +29,15 @@ $query = mysqli_query($con, $sql);
     </header>
     <h1>Acceso Colegio</h1>
     <div class="users-form">
-        <h1>Crear usuario</h1>
+        <h2>Crear usuario</h2>
         <form action="insert_user.php" method="POST">
             <input type="text" name="Nombres" placeholder="Nombre">
             <input type="text" name="Apellidos" placeholder="Apellidos">
-            <input type="text" name="Numero de documento" placeholder="Numero de documento">
-            <input type="text" name="Nombres del acudiente" placeholder="Nombres del acudiente">
-            <input type="text" name="Apellidos del acudiente" placeholder="Apellidos del acudiente">
-            <input type="text" name="Numero de documento del acudiente" placeholder="Documento del acudiente">
-            <input type="text" name="Teléfono de contacto" placeholder="Telefono">
+            <input type="text" name="Numerodedocumento" placeholder="Numero de documento">
+            <input type="text" name="Nombresdelacudiente" placeholder="Nombres del acudiente">
+            <input type="text" name="Apellidosdelacudiente" placeholder="Apellidos del acudiente">
+            <input type="text" name="Numerodedocumentodelacudiente" placeholder="Documento del acudiente">
+            <input type="text" name="Teléfonodecontacto" placeholder="Telefono">
 
             <input type="submit" value="Agregar">
         </form>
@@ -65,11 +65,11 @@ $query = mysqli_query($con, $sql);
                         <th><?= $row['ID'] ?></th>
                         <th><?= $row['Nombres'] ?></th>
                         <th><?= $row['Apellidos'] ?></th>
-                        <th><?= $row['Numero de documento'] ?></th>
-                        <th><?= $row['Nombres del acudiente'] ?></th>
-                        <th><?= $row['Apellidos del acudiente'] ?></th>
-                        <th><?= $row['Numero de documento del acudiente'] ?></th>
-                        <th><?= $row['Teléfono de contacto'] ?></th>
+                        <th><?= $row['Numerodocumento'] ?></th>
+                        <th><?= $row['NombreAcudiente'] ?></th>
+                        <th><?= $row['ApellidoAcudiente'] ?></th>
+                        <th><?= $row['DocumentoAcudiente'] ?></th>
+                        <th><?= $row['Telefono'] ?></th>
                         <th><a href="update.php?ID=<?= $row['ID'] ?>" class="users-table--edit">Editar</a></th>
                         <th><a href="delete_user.php?ID=<?= $row['ID'] ?>" class="users-table--delete" >Eliminar</a></th>
                     </tr>
